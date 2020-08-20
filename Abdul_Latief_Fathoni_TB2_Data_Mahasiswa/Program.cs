@@ -16,7 +16,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new abdul_latief_fathoni_nilai_mahasiswa());
         }
     }
 }
