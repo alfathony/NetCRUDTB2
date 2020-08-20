@@ -17,11 +17,24 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             InitializeComponent();
         }
 
+        public void LoadGridView()
+        {
+            this.table_nilai_mahasiswaTableAdapter.Fill(this.dataSet.table_nilai_mahasiswa);
+
+        }
+
+        public void CelarTextBox()
+        {
+            tbNim.Clear();
+            tbNamaMahasiswa.Clear();
+            tbMataKuliah.Clear();
+            tbNilai.Clear();
+        }
+
         private void abdul_latief_fathoni_nilai_mahasiswa_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSet.table_nilai_mahasiswa' table. You can move, or remove it, as needed.
-            this.table_nilai_mahasiswaTableAdapter.Fill(this.dataSet.table_nilai_mahasiswa);
-        
+            LoadGridView();
+
             btnSimpan.Enabled = false;
             btnHapus.Enabled = false;
             btnCetak.Enabled = false;
@@ -30,6 +43,11 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             tbNamaMahasiswa.Enabled = false;
             tbMataKuliah.Enabled = false;
             tbNilai.Enabled = false;
+
+            if (this.Tag == null)
+            {
+                MessageBox.Show("ada tag nya");
+            }
 
         }
 
@@ -49,8 +67,10 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             {
                 this.table_nilai_mahasiswaTableAdapter.Insert(tbNim.Text, tbNamaMahasiswa.Text, tbMataKuliah.Text, Int32.Parse(tbNilai.Text));
                 MessageBox.Show("Data has been saved");
-                dataGridView.Refresh();
-         
+
+                LoadGridView();
+                CelarTextBox();
+
             }
             catch (Exception ex)
             {
@@ -58,9 +78,9 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             }
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void onCellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridView.Refresh();
+
         }
     }
 }
