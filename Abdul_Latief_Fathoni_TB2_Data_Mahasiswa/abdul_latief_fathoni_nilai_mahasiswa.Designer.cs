@@ -51,7 +51,8 @@
             this.tbMataKuliah = new System.Windows.Forms.TextBox();
             this.tbNamaMahasiswa = new System.Windows.Forms.TextBox();
             this.tbNim = new System.Windows.Forms.TextBox();
-            this.abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter = new Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1TableAdapters.abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter();
+            this.table_nilai_mahasiswaTableAdapter = new Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1TableAdapters.table_nilai_mahasiswaTableAdapter();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.abdullatieffathonitablenilaimahasiswaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetBindingSource)).BeginInit();
@@ -69,7 +70,7 @@
             this.namamahasiswaDataGridViewTextBoxColumn,
             this.matakuliahDataGridViewTextBoxColumn,
             this.nilaiDataGridViewTextBoxColumn});
-            this.dataGridView.DataSource = this.abdullatieffathonitablenilaimahasiswaBindingSource;
+            this.dataGridView.DataSource = this.dataSetBindingSource;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
             this.dataGridView.Name = "dataGridView";
@@ -109,13 +110,13 @@
             // 
             // abdullatieffathonitablenilaimahasiswaBindingSource
             // 
-            this.abdullatieffathonitablenilaimahasiswaBindingSource.DataMember = "abdul_latief_fathoni_table_nilai_mahasiswa";
-            this.abdullatieffathonitablenilaimahasiswaBindingSource.DataSource = this.dataSetBindingSource;
+            this.abdullatieffathonitablenilaimahasiswaBindingSource.DataMember = "table_nilai_mahasiswa";
+            this.abdullatieffathonitablenilaimahasiswaBindingSource.DataSource = this.dataSet;
             // 
             // dataSetBindingSource
             // 
+            this.dataSetBindingSource.DataMember = "table_nilai_mahasiswa";
             this.dataSetBindingSource.DataSource = this.dataSet;
-            this.dataSetBindingSource.Position = 0;
             // 
             // dataSet
             // 
@@ -124,6 +125,7 @@
             // 
             // panelBottom
             // 
+            this.panelBottom.Controls.Add(this.btnRefresh);
             this.panelBottom.Controls.Add(this.label4);
             this.panelBottom.Controls.Add(this.label3);
             this.panelBottom.Controls.Add(this.label2);
@@ -244,9 +246,19 @@
             this.tbNim.Size = new System.Drawing.Size(238, 20);
             this.tbNim.TabIndex = 0;
             // 
-            // abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter
+            // table_nilai_mahasiswaTableAdapter
             // 
-            this.abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.ClearBeforeFill = true;
+            this.table_nilai_mahasiswaTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(654, 30);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(115, 23);
+            this.btnRefresh.TabIndex = 12;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // abdul_latief_fathoni_nilai_mahasiswa
             // 
@@ -274,7 +286,6 @@
         private System.Windows.Forms.BindingSource dataSetBindingSource;
         private DataSet1 dataSet;
         private System.Windows.Forms.Panel panelBottom;
-        private DataSet1TableAdapters.abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nimDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namamahasiswaDataGridViewTextBoxColumn;
@@ -293,6 +304,8 @@
         private System.Windows.Forms.TextBox tbMataKuliah;
         private System.Windows.Forms.TextBox tbNamaMahasiswa;
         private System.Windows.Forms.TextBox tbNim;
+        private DataSet1TableAdapters.table_nilai_mahasiswaTableAdapter table_nilai_mahasiswaTableAdapter;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }
 

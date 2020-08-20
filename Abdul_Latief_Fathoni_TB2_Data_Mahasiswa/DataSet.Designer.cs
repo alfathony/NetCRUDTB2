@@ -24,7 +24,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DataSet1 : global::System.Data.DataSet {
         
-        private abdul_latief_fathoni_table_nilai_mahasiswaDataTable tableabdul_latief_fathoni_table_nilai_mahasiswa;
+        private table_nilai_mahasiswaDataTable tabletable_nilai_mahasiswa;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["abdul_latief_fathoni_table_nilai_mahasiswa"] != null)) {
-                    base.Tables.Add(new abdul_latief_fathoni_table_nilai_mahasiswaDataTable(ds.Tables["abdul_latief_fathoni_table_nilai_mahasiswa"]));
+                if ((ds.Tables["table_nilai_mahasiswa"] != null)) {
+                    base.Tables.Add(new table_nilai_mahasiswaDataTable(ds.Tables["table_nilai_mahasiswa"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public abdul_latief_fathoni_table_nilai_mahasiswaDataTable abdul_latief_fathoni_table_nilai_mahasiswa {
+        public table_nilai_mahasiswaDataTable table_nilai_mahasiswa {
             get {
-                return this.tableabdul_latief_fathoni_table_nilai_mahasiswa;
+                return this.tabletable_nilai_mahasiswa;
             }
         }
         
@@ -152,8 +152,8 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["abdul_latief_fathoni_table_nilai_mahasiswa"] != null)) {
-                    base.Tables.Add(new abdul_latief_fathoni_table_nilai_mahasiswaDataTable(ds.Tables["abdul_latief_fathoni_table_nilai_mahasiswa"]));
+                if ((ds.Tables["table_nilai_mahasiswa"] != null)) {
+                    base.Tables.Add(new table_nilai_mahasiswaDataTable(ds.Tables["table_nilai_mahasiswa"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableabdul_latief_fathoni_table_nilai_mahasiswa = ((abdul_latief_fathoni_table_nilai_mahasiswaDataTable)(base.Tables["abdul_latief_fathoni_table_nilai_mahasiswa"]));
+            this.tabletable_nilai_mahasiswa = ((table_nilai_mahasiswaDataTable)(base.Tables["table_nilai_mahasiswa"]));
             if ((initTable == true)) {
-                if ((this.tableabdul_latief_fathoni_table_nilai_mahasiswa != null)) {
-                    this.tableabdul_latief_fathoni_table_nilai_mahasiswa.InitVars();
+                if ((this.tabletable_nilai_mahasiswa != null)) {
+                    this.tabletable_nilai_mahasiswa.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             this.Namespace = "http://tempuri.org/DataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableabdul_latief_fathoni_table_nilai_mahasiswa = new abdul_latief_fathoni_table_nilai_mahasiswaDataTable();
-            base.Tables.Add(this.tableabdul_latief_fathoni_table_nilai_mahasiswa);
+            this.tabletable_nilai_mahasiswa = new table_nilai_mahasiswaDataTable();
+            base.Tables.Add(this.tabletable_nilai_mahasiswa);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeabdul_latief_fathoni_table_nilai_mahasiswa() {
+        private bool ShouldSerializetable_nilai_mahasiswa() {
             return false;
         }
         
@@ -270,14 +270,14 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEventHandler(object sender, abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEvent e);
+        public delegate void table_nilai_mahasiswaRowChangeEventHandler(object sender, table_nilai_mahasiswaRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class abdul_latief_fathoni_table_nilai_mahasiswaDataTable : global::System.Data.TypedTableBase<abdul_latief_fathoni_table_nilai_mahasiswaRow> {
+        public partial class table_nilai_mahasiswaDataTable : global::System.Data.TypedTableBase<table_nilai_mahasiswaRow> {
             
             private global::System.Data.DataColumn columnId;
             
@@ -291,8 +291,8 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public abdul_latief_fathoni_table_nilai_mahasiswaDataTable() {
-                this.TableName = "abdul_latief_fathoni_table_nilai_mahasiswa";
+            public table_nilai_mahasiswaDataTable() {
+                this.TableName = "table_nilai_mahasiswa";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -300,7 +300,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal abdul_latief_fathoni_table_nilai_mahasiswaDataTable(global::System.Data.DataTable table) {
+            internal table_nilai_mahasiswaDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -317,7 +317,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected abdul_latief_fathoni_table_nilai_mahasiswaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected table_nilai_mahasiswaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -373,56 +373,56 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public abdul_latief_fathoni_table_nilai_mahasiswaRow this[int index] {
+            public table_nilai_mahasiswaRow this[int index] {
                 get {
-                    return ((abdul_latief_fathoni_table_nilai_mahasiswaRow)(this.Rows[index]));
+                    return ((table_nilai_mahasiswaRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEventHandler abdul_latief_fathoni_table_nilai_mahasiswaRowChanging;
+            public event table_nilai_mahasiswaRowChangeEventHandler table_nilai_mahasiswaRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEventHandler abdul_latief_fathoni_table_nilai_mahasiswaRowChanged;
+            public event table_nilai_mahasiswaRowChangeEventHandler table_nilai_mahasiswaRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEventHandler abdul_latief_fathoni_table_nilai_mahasiswaRowDeleting;
+            public event table_nilai_mahasiswaRowChangeEventHandler table_nilai_mahasiswaRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEventHandler abdul_latief_fathoni_table_nilai_mahasiswaRowDeleted;
+            public event table_nilai_mahasiswaRowChangeEventHandler table_nilai_mahasiswaRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Addabdul_latief_fathoni_table_nilai_mahasiswaRow(abdul_latief_fathoni_table_nilai_mahasiswaRow row) {
+            public void Addtable_nilai_mahasiswaRow(table_nilai_mahasiswaRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public abdul_latief_fathoni_table_nilai_mahasiswaRow Addabdul_latief_fathoni_table_nilai_mahasiswaRow(decimal nim, string nama_mahasiswa, string mata_kuliah, int nilai) {
-                abdul_latief_fathoni_table_nilai_mahasiswaRow rowabdul_latief_fathoni_table_nilai_mahasiswaRow = ((abdul_latief_fathoni_table_nilai_mahasiswaRow)(this.NewRow()));
+            public table_nilai_mahasiswaRow Addtable_nilai_mahasiswaRow(string nim, string nama_mahasiswa, string mata_kuliah, int nilai) {
+                table_nilai_mahasiswaRow rowtable_nilai_mahasiswaRow = ((table_nilai_mahasiswaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         nim,
                         nama_mahasiswa,
                         mata_kuliah,
                         nilai};
-                rowabdul_latief_fathoni_table_nilai_mahasiswaRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowabdul_latief_fathoni_table_nilai_mahasiswaRow);
-                return rowabdul_latief_fathoni_table_nilai_mahasiswaRow;
+                rowtable_nilai_mahasiswaRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtable_nilai_mahasiswaRow);
+                return rowtable_nilai_mahasiswaRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public abdul_latief_fathoni_table_nilai_mahasiswaRow FindById(int Id) {
-                return ((abdul_latief_fathoni_table_nilai_mahasiswaRow)(this.Rows.Find(new object[] {
+            public table_nilai_mahasiswaRow FindById(int Id) {
+                return ((table_nilai_mahasiswaRow)(this.Rows.Find(new object[] {
                             Id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                abdul_latief_fathoni_table_nilai_mahasiswaDataTable cln = ((abdul_latief_fathoni_table_nilai_mahasiswaDataTable)(base.Clone()));
+                table_nilai_mahasiswaDataTable cln = ((table_nilai_mahasiswaDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -430,7 +430,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new abdul_latief_fathoni_table_nilai_mahasiswaDataTable();
+                return new table_nilai_mahasiswaDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -448,7 +448,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             private void InitClass() {
                 this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId);
-                this.columnnim = new global::System.Data.DataColumn("nim", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnnim = new global::System.Data.DataColumn("nim", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnim);
                 this.columnnama_mahasiswa = new global::System.Data.DataColumn("nama_mahasiswa", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnama_mahasiswa);
@@ -464,34 +464,35 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
                 this.columnId.AllowDBNull = false;
                 this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
+                this.columnnim.MaxLength = 12;
                 this.columnnama_mahasiswa.MaxLength = 50;
                 this.columnmata_kuliah.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public abdul_latief_fathoni_table_nilai_mahasiswaRow Newabdul_latief_fathoni_table_nilai_mahasiswaRow() {
-                return ((abdul_latief_fathoni_table_nilai_mahasiswaRow)(this.NewRow()));
+            public table_nilai_mahasiswaRow Newtable_nilai_mahasiswaRow() {
+                return ((table_nilai_mahasiswaRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new abdul_latief_fathoni_table_nilai_mahasiswaRow(builder);
+                return new table_nilai_mahasiswaRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(abdul_latief_fathoni_table_nilai_mahasiswaRow);
+                return typeof(table_nilai_mahasiswaRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.abdul_latief_fathoni_table_nilai_mahasiswaRowChanged != null)) {
-                    this.abdul_latief_fathoni_table_nilai_mahasiswaRowChanged(this, new abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEvent(((abdul_latief_fathoni_table_nilai_mahasiswaRow)(e.Row)), e.Action));
+                if ((this.table_nilai_mahasiswaRowChanged != null)) {
+                    this.table_nilai_mahasiswaRowChanged(this, new table_nilai_mahasiswaRowChangeEvent(((table_nilai_mahasiswaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -499,8 +500,8 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.abdul_latief_fathoni_table_nilai_mahasiswaRowChanging != null)) {
-                    this.abdul_latief_fathoni_table_nilai_mahasiswaRowChanging(this, new abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEvent(((abdul_latief_fathoni_table_nilai_mahasiswaRow)(e.Row)), e.Action));
+                if ((this.table_nilai_mahasiswaRowChanging != null)) {
+                    this.table_nilai_mahasiswaRowChanging(this, new table_nilai_mahasiswaRowChangeEvent(((table_nilai_mahasiswaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -508,8 +509,8 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.abdul_latief_fathoni_table_nilai_mahasiswaRowDeleted != null)) {
-                    this.abdul_latief_fathoni_table_nilai_mahasiswaRowDeleted(this, new abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEvent(((abdul_latief_fathoni_table_nilai_mahasiswaRow)(e.Row)), e.Action));
+                if ((this.table_nilai_mahasiswaRowDeleted != null)) {
+                    this.table_nilai_mahasiswaRowDeleted(this, new table_nilai_mahasiswaRowChangeEvent(((table_nilai_mahasiswaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -517,14 +518,14 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.abdul_latief_fathoni_table_nilai_mahasiswaRowDeleting != null)) {
-                    this.abdul_latief_fathoni_table_nilai_mahasiswaRowDeleting(this, new abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEvent(((abdul_latief_fathoni_table_nilai_mahasiswaRow)(e.Row)), e.Action));
+                if ((this.table_nilai_mahasiswaRowDeleting != null)) {
+                    this.table_nilai_mahasiswaRowDeleting(this, new table_nilai_mahasiswaRowChangeEvent(((table_nilai_mahasiswaRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Removeabdul_latief_fathoni_table_nilai_mahasiswaRow(abdul_latief_fathoni_table_nilai_mahasiswaRow row) {
+            public void Removetable_nilai_mahasiswaRow(table_nilai_mahasiswaRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -551,7 +552,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "abdul_latief_fathoni_table_nilai_mahasiswaDataTable";
+                attribute2.FixedValue = "table_nilai_mahasiswaDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -595,42 +596,41 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class abdul_latief_fathoni_table_nilai_mahasiswaRow : global::System.Data.DataRow {
+        public partial class table_nilai_mahasiswaRow : global::System.Data.DataRow {
             
-            private abdul_latief_fathoni_table_nilai_mahasiswaDataTable tableabdul_latief_fathoni_table_nilai_mahasiswa;
+            private table_nilai_mahasiswaDataTable tabletable_nilai_mahasiswa;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal abdul_latief_fathoni_table_nilai_mahasiswaRow(global::System.Data.DataRowBuilder rb) : 
+            internal table_nilai_mahasiswaRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableabdul_latief_fathoni_table_nilai_mahasiswa = ((abdul_latief_fathoni_table_nilai_mahasiswaDataTable)(this.Table));
+                this.tabletable_nilai_mahasiswa = ((table_nilai_mahasiswaDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public int Id {
                 get {
-                    return ((int)(this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.IdColumn]));
+                    return ((int)(this[this.tabletable_nilai_mahasiswa.IdColumn]));
                 }
                 set {
-                    this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.IdColumn] = value;
+                    this[this.tabletable_nilai_mahasiswa.IdColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal nim {
+            public string nim {
                 get {
                     try {
-                        return ((decimal)(this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nimColumn]));
+                        return ((string)(this[this.tabletable_nilai_mahasiswa.nimColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'nim\' in table \'abdul_latief_fathoni_table_nilai_mahasiswa\' " +
-                                "is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'nim\' in table \'table_nilai_mahasiswa\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nimColumn] = value;
+                    this[this.tabletable_nilai_mahasiswa.nimColumn] = value;
                 }
             }
             
@@ -639,15 +639,15 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             public string nama_mahasiswa {
                 get {
                     try {
-                        return ((string)(this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nama_mahasiswaColumn]));
+                        return ((string)(this[this.tabletable_nilai_mahasiswa.nama_mahasiswaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'nama_mahasiswa\' in table \'abdul_latief_fathoni_table_nilai_" +
-                                "mahasiswa\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'nama_mahasiswa\' in table \'table_nilai_mahasiswa\' is DBNull." +
+                                "", e);
                     }
                 }
                 set {
-                    this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nama_mahasiswaColumn] = value;
+                    this[this.tabletable_nilai_mahasiswa.nama_mahasiswaColumn] = value;
                 }
             }
             
@@ -656,15 +656,14 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             public string mata_kuliah {
                 get {
                     try {
-                        return ((string)(this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.mata_kuliahColumn]));
+                        return ((string)(this[this.tabletable_nilai_mahasiswa.mata_kuliahColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'mata_kuliah\' in table \'abdul_latief_fathoni_table_nilai_mah" +
-                                "asiswa\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'mata_kuliah\' in table \'table_nilai_mahasiswa\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.mata_kuliahColumn] = value;
+                    this[this.tabletable_nilai_mahasiswa.mata_kuliahColumn] = value;
                 }
             }
             
@@ -673,64 +672,63 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
             public int nilai {
                 get {
                     try {
-                        return ((int)(this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nilaiColumn]));
+                        return ((int)(this[this.tabletable_nilai_mahasiswa.nilaiColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'nilai\' in table \'abdul_latief_fathoni_table_nilai_mahasiswa" +
-                                "\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'nilai\' in table \'table_nilai_mahasiswa\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nilaiColumn] = value;
+                    this[this.tabletable_nilai_mahasiswa.nilaiColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsnimNull() {
-                return this.IsNull(this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nimColumn);
+                return this.IsNull(this.tabletable_nilai_mahasiswa.nimColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetnimNull() {
-                this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nimColumn] = global::System.Convert.DBNull;
+                this[this.tabletable_nilai_mahasiswa.nimColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Isnama_mahasiswaNull() {
-                return this.IsNull(this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nama_mahasiswaColumn);
+                return this.IsNull(this.tabletable_nilai_mahasiswa.nama_mahasiswaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Setnama_mahasiswaNull() {
-                this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nama_mahasiswaColumn] = global::System.Convert.DBNull;
+                this[this.tabletable_nilai_mahasiswa.nama_mahasiswaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Ismata_kuliahNull() {
-                return this.IsNull(this.tableabdul_latief_fathoni_table_nilai_mahasiswa.mata_kuliahColumn);
+                return this.IsNull(this.tabletable_nilai_mahasiswa.mata_kuliahColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Setmata_kuliahNull() {
-                this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.mata_kuliahColumn] = global::System.Convert.DBNull;
+                this[this.tabletable_nilai_mahasiswa.mata_kuliahColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsnilaiNull() {
-                return this.IsNull(this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nilaiColumn);
+                return this.IsNull(this.tabletable_nilai_mahasiswa.nilaiColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetnilaiNull() {
-                this[this.tableabdul_latief_fathoni_table_nilai_mahasiswa.nilaiColumn] = global::System.Convert.DBNull;
+                this[this.tabletable_nilai_mahasiswa.nilaiColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -738,22 +736,22 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEvent : global::System.EventArgs {
+        public class table_nilai_mahasiswaRowChangeEvent : global::System.EventArgs {
             
-            private abdul_latief_fathoni_table_nilai_mahasiswaRow eventRow;
+            private table_nilai_mahasiswaRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public abdul_latief_fathoni_table_nilai_mahasiswaRowChangeEvent(abdul_latief_fathoni_table_nilai_mahasiswaRow row, global::System.Data.DataRowAction action) {
+            public table_nilai_mahasiswaRowChangeEvent(table_nilai_mahasiswaRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public abdul_latief_fathoni_table_nilai_mahasiswaRow Row {
+            public table_nilai_mahasiswaRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -781,7 +779,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter : global::System.ComponentModel.Component {
+    public partial class table_nilai_mahasiswaTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -795,7 +793,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter() {
+        public table_nilai_mahasiswaTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -892,7 +890,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "abdul_latief_fathoni_table_nilai_mahasiswa";
+            tableMapping.DataSetTable = "table_nilai_mahasiswa";
             tableMapping.ColumnMappings.Add("Id", "Id");
             tableMapping.ColumnMappings.Add("nim", "nim");
             tableMapping.ColumnMappings.Add("nama_mahasiswa", "nama_mahasiswa");
@@ -901,11 +899,11 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1TableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[abdul_latief_fathoni_table_nilai_mahasiswa] WHERE (([Id] = @Original_Id) AND ((@IsNull_nim = 1 AND [nim] IS NULL) OR ([nim] = @Original_nim)) AND ((@IsNull_nama_mahasiswa = 1 AND [nama_mahasiswa] IS NULL) OR ([nama_mahasiswa] = @Original_nama_mahasiswa)) AND ((@IsNull_mata_kuliah = 1 AND [mata_kuliah] IS NULL) OR ([mata_kuliah] = @Original_mata_kuliah)) AND ((@IsNull_nilai = 1 AND [nilai] IS NULL) OR ([nilai] = @Original_nilai)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[table_nilai_mahasiswa] WHERE (([Id] = @Original_Id) AND ((@IsNull_nim = 1 AND [nim] IS NULL) OR ([nim] = @Original_nim)) AND ((@IsNull_nama_mahasiswa = 1 AND [nama_mahasiswa] IS NULL) OR ([nama_mahasiswa] = @Original_nama_mahasiswa)) AND ((@IsNull_mata_kuliah = 1 AND [mata_kuliah] IS NULL) OR ([mata_kuliah] = @Original_mata_kuliah)) AND ((@IsNull_nilai = 1 AND [nilai] IS NULL) OR ([nilai] = @Original_nilai)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nim", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nim", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nim", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "nim", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nim", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nama_mahasiswa", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nama_mahasiswa", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nama_mahasiswa", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nama_mahasiswa", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_mata_kuliah", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mata_kuliah", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -914,25 +912,27 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nilai", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nilai", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[abdul_latief_fathoni_table_nilai_mahasiswa] ([nim], [nama_mahasiswa], [mata_kuliah], [nilai]) VALUES (@nim, @nama_mahasiswa, @mata_kuliah, @nilai);
-SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_table_nilai_mahasiswa WHERE (Id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[table_nilai_mahasiswa] ([nim], [nama_mahasiswa], [mata_kuliah]" +
+                ", [nilai]) VALUES (@nim, @nama_mahasiswa, @mata_kuliah, @nilai);\r\nSELECT Id, nim" +
+                ", nama_mahasiswa, mata_kuliah, nilai FROM table_nilai_mahasiswa WHERE (Id = SCOP" +
+                "E_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nim", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "nim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nama_mahasiswa", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nama_mahasiswa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mata_kuliah", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mata_kuliah", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nilai", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nilai", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[abdul_latief_fathoni_table_nilai_mahasiswa] SET [nim] = @nim, [nama_mahasiswa] = @nama_mahasiswa, [mata_kuliah] = @mata_kuliah, [nilai] = @nilai WHERE (([Id] = @Original_Id) AND ((@IsNull_nim = 1 AND [nim] IS NULL) OR ([nim] = @Original_nim)) AND ((@IsNull_nama_mahasiswa = 1 AND [nama_mahasiswa] IS NULL) OR ([nama_mahasiswa] = @Original_nama_mahasiswa)) AND ((@IsNull_mata_kuliah = 1 AND [mata_kuliah] IS NULL) OR ([mata_kuliah] = @Original_mata_kuliah)) AND ((@IsNull_nilai = 1 AND [nilai] IS NULL) OR ([nilai] = @Original_nilai)));
-SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_table_nilai_mahasiswa WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[table_nilai_mahasiswa] SET [nim] = @nim, [nama_mahasiswa] = @nama_mahasiswa, [mata_kuliah] = @mata_kuliah, [nilai] = @nilai WHERE (([Id] = @Original_Id) AND ((@IsNull_nim = 1 AND [nim] IS NULL) OR ([nim] = @Original_nim)) AND ((@IsNull_nama_mahasiswa = 1 AND [nama_mahasiswa] IS NULL) OR ([nama_mahasiswa] = @Original_nama_mahasiswa)) AND ((@IsNull_mata_kuliah = 1 AND [mata_kuliah] IS NULL) OR ([mata_kuliah] = @Original_mata_kuliah)) AND ((@IsNull_nilai = 1 AND [nilai] IS NULL) OR ([nilai] = @Original_nilai)));
+SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM table_nilai_mahasiswa WHERE (Id = @Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nim", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "nim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nama_mahasiswa", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nama_mahasiswa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mata_kuliah", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mata_kuliah", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nilai", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nilai", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nim", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nim", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nim", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "nim", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nim", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nim", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nama_mahasiswa", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nama_mahasiswa", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nama_mahasiswa", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nama_mahasiswa", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_mata_kuliah", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mata_kuliah", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -946,7 +946,7 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.Properties.Settings.Default.abdul_latief_fathoni_db_tb2ConnectionString;
+            this._connection.ConnectionString = global::Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.Properties.Settings.Default.abdul_latief_fathoni_db_tb2_data_mahasiswaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -955,8 +955,8 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM dbo.abdul_latief_fathoni_" +
-                "table_nilai_mahasiswa";
+            this._commandCollection[0].CommandText = "SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM dbo.table_nilai_mahasiswa" +
+                "";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -964,7 +964,7 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet1.abdul_latief_fathoni_table_nilai_mahasiswaDataTable dataTable) {
+        public virtual int Fill(DataSet1.table_nilai_mahasiswaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -977,9 +977,9 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.abdul_latief_fathoni_table_nilai_mahasiswaDataTable GetData() {
+        public virtual DataSet1.table_nilai_mahasiswaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.abdul_latief_fathoni_table_nilai_mahasiswaDataTable dataTable = new DataSet1.abdul_latief_fathoni_table_nilai_mahasiswaDataTable();
+            DataSet1.table_nilai_mahasiswaDataTable dataTable = new DataSet1.table_nilai_mahasiswaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -987,7 +987,7 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet1.abdul_latief_fathoni_table_nilai_mahasiswaDataTable dataTable) {
+        public virtual int Update(DataSet1.table_nilai_mahasiswaDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -995,7 +995,7 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "abdul_latief_fathoni_table_nilai_mahasiswa");
+            return this.Adapter.Update(dataSet, "table_nilai_mahasiswa");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1017,15 +1017,15 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id, global::System.Nullable<decimal> Original_nim, string Original_nama_mahasiswa, string Original_mata_kuliah, global::System.Nullable<int> Original_nilai) {
+        public virtual int Delete(int Original_Id, string Original_nim, string Original_nama_mahasiswa, string Original_mata_kuliah, global::System.Nullable<int> Original_nilai) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
-            if ((Original_nim.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((decimal)(Original_nim.Value));
-            }
-            else {
+            if ((Original_nim == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_nim));
             }
             if ((Original_nama_mahasiswa == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
@@ -1071,12 +1071,12 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int v, global::System.Nullable<decimal> nim, string nama_mahasiswa, string mata_kuliah, global::System.Nullable<int> nilai) {
-            if ((nim.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((decimal)(nim.Value));
+        public virtual int Insert(string nim, string nama_mahasiswa, string mata_kuliah, global::System.Nullable<int> nilai) {
+            if ((nim == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(nim));
             }
             if ((nama_mahasiswa == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -1116,12 +1116,12 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<decimal> nim, string nama_mahasiswa, string mata_kuliah, global::System.Nullable<int> nilai, int Original_Id, global::System.Nullable<decimal> Original_nim, string Original_nama_mahasiswa, string Original_mata_kuliah, global::System.Nullable<int> Original_nilai, int Id) {
-            if ((nim.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((decimal)(nim.Value));
+        public virtual int Update(string nim, string nama_mahasiswa, string mata_kuliah, global::System.Nullable<int> nilai, int Original_Id, string Original_nim, string Original_nama_mahasiswa, string Original_mata_kuliah, global::System.Nullable<int> Original_nilai, int Id) {
+            if ((nim == null)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(nim));
             }
             if ((nama_mahasiswa == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -1142,13 +1142,13 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_Id));
-            if ((Original_nim.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(Original_nim.Value));
-            }
-            else {
+            if ((Original_nim == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_nim));
             }
             if ((Original_nama_mahasiswa == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
@@ -1195,7 +1195,7 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<decimal> nim, string nama_mahasiswa, string mata_kuliah, global::System.Nullable<int> nilai, int Original_Id, global::System.Nullable<decimal> Original_nim, string Original_nama_mahasiswa, string Original_mata_kuliah, global::System.Nullable<int> Original_nilai) {
+        public virtual int Update(string nim, string nama_mahasiswa, string mata_kuliah, global::System.Nullable<int> nilai, int Original_Id, string Original_nim, string Original_nama_mahasiswa, string Original_mata_kuliah, global::System.Nullable<int> Original_nilai) {
             return this.Update(nim, nama_mahasiswa, mata_kuliah, nilai, Original_Id, Original_nim, Original_nama_mahasiswa, Original_mata_kuliah, Original_nilai, Original_Id);
         }
     }
@@ -1212,7 +1212,7 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         
         private UpdateOrderOption _updateOrder;
         
-        private abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter _abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter;
+        private table_nilai_mahasiswaTableAdapter _table_nilai_mahasiswaTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1234,12 +1234,12 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter {
+        public table_nilai_mahasiswaTableAdapter table_nilai_mahasiswaTableAdapter {
             get {
-                return this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter;
+                return this._table_nilai_mahasiswaTableAdapter;
             }
             set {
-                this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter = value;
+                this._table_nilai_mahasiswaTableAdapter = value;
             }
         }
         
@@ -1262,9 +1262,9 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter != null) 
-                            && (this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Connection != null))) {
-                    return this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Connection;
+                if (((this._table_nilai_mahasiswaTableAdapter != null) 
+                            && (this._table_nilai_mahasiswaTableAdapter.Connection != null))) {
+                    return this._table_nilai_mahasiswaTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1279,7 +1279,7 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter != null)) {
+                if ((this._table_nilai_mahasiswaTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1293,12 +1293,12 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateUpdatedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.abdul_latief_fathoni_table_nilai_mahasiswa.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._table_nilai_mahasiswaTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.table_nilai_mahasiswa.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Update(updatedRows));
+                    result = (result + this._table_nilai_mahasiswaTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1312,11 +1312,11 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateInsertedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.abdul_latief_fathoni_table_nilai_mahasiswa.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._table_nilai_mahasiswaTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.table_nilai_mahasiswa.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Update(addedRows));
+                    result = (result + this._table_nilai_mahasiswaTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1330,11 +1330,11 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.abdul_latief_fathoni_table_nilai_mahasiswa.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._table_nilai_mahasiswaTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.table_nilai_mahasiswa.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Update(deletedRows));
+                    result = (result + this._table_nilai_mahasiswaTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1377,8 +1377,8 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Connection) == false))) {
+            if (((this._table_nilai_mahasiswaTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._table_nilai_mahasiswaTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1414,13 +1414,13 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter != null)) {
-                    revertConnections.Add(this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter, this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Connection);
-                    this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Adapter);
+                if ((this._table_nilai_mahasiswaTableAdapter != null)) {
+                    revertConnections.Add(this._table_nilai_mahasiswaTableAdapter, this._table_nilai_mahasiswaTableAdapter.Connection);
+                    this._table_nilai_mahasiswaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._table_nilai_mahasiswaTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._table_nilai_mahasiswaTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._table_nilai_mahasiswaTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._table_nilai_mahasiswaTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1481,9 +1481,9 @@ SELECT Id, nim, nama_mahasiswa, mata_kuliah, nilai FROM abdul_latief_fathoni_tab
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter != null)) {
-                    this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter]));
-                    this._abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Transaction = null;
+                if ((this._table_nilai_mahasiswaTableAdapter != null)) {
+                    this._table_nilai_mahasiswaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._table_nilai_mahasiswaTableAdapter]));
+                    this._table_nilai_mahasiswaTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

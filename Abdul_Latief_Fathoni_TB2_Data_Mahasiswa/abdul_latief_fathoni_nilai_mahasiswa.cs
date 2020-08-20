@@ -19,9 +19,9 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
 
         private void abdul_latief_fathoni_nilai_mahasiswa_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSet.abdul_latief_fathoni_table_nilai_mahasiswa' table. You can move, or remove it, as needed.
-            this.abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Fill(this.dataSet.abdul_latief_fathoni_table_nilai_mahasiswa);
-
+            // TODO: This line of code loads data into the 'dataSet.table_nilai_mahasiswa' table. You can move, or remove it, as needed.
+            this.table_nilai_mahasiswaTableAdapter.Fill(this.dataSet.table_nilai_mahasiswa);
+        
             btnSimpan.Enabled = false;
             btnHapus.Enabled = false;
             btnCetak.Enabled = false;
@@ -47,7 +47,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
         {
             try
             {
-                this.abdul_latief_fathoni_table_nilai_mahasiswaTableAdapter.Insert(5 ,Decimal.Parse(tbNim.Text), tbNamaMahasiswa.Text, tbMataKuliah.Text, Int32.Parse(tbNilai.Text));
+                this.table_nilai_mahasiswaTableAdapter.Insert(tbNim.Text, tbNamaMahasiswa.Text, tbMataKuliah.Text, Int32.Parse(tbNilai.Text));
                 MessageBox.Show("Data has been saved");
                 dataGridView.Refresh();
          
@@ -56,6 +56,11 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dataGridView.Refresh();
         }
     }
 }
