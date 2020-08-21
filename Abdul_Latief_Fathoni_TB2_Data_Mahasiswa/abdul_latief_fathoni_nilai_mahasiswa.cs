@@ -12,7 +12,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
 {
     public partial class abdul_latief_fathoni_nilai_mahasiswa : Form
     {
-        int mahasiswaID = 0;
+        int abdul_latief_fathoni_var_mhsID = 0;
 
         public abdul_latief_fathoni_nilai_mahasiswa()
         {
@@ -34,8 +34,6 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             btnCetak.Enabled = false;
 
             abdul_latief_fathoni_enable_textbox(false);
-
-            id_label.Text = mahasiswaID.ToString();
         }
 
         public void abdul_latief_fathoni_clear_textbox()
@@ -56,7 +54,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
-            mahasiswaID = 0;
+            abdul_latief_fathoni_var_mhsID = 0;
             abdul_latief_fathoni_enable_textbox(true);
             abdul_latief_fathoni_clear_textbox();
             btnSimpan.Text = "Simpan";
@@ -70,10 +68,10 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             
             try
             {
-                if (mahasiswaID > 0)
+                if (abdul_latief_fathoni_var_mhsID > 0)
                 {
                     // run query update
-                    this.table_nilai_mahasiswaTableAdapter.Update(tbNim.Text, tbNamaMahasiswa.Text, tbMataKuliah.Text, Int32.Parse(tbNilai.Text), mahasiswaID, mahasiswaID);
+                    this.table_nilai_mahasiswaTableAdapter.Update(tbNim.Text, tbNamaMahasiswa.Text, tbMataKuliah.Text, Int32.Parse(tbNilai.Text), abdul_latief_fathoni_var_mhsID, abdul_latief_fathoni_var_mhsID);
                 }
                 else
                 {
@@ -99,10 +97,9 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             int rowIndex = e.RowIndex;
             DataGridViewRow row = dataGridView.Rows[rowIndex];
 
-            mahasiswaID = Convert.ToInt32(row.Cells[0].Value.ToString());
-            id_label.Text = mahasiswaID.ToString();
+            abdul_latief_fathoni_var_mhsID = Convert.ToInt32(row.Cells[0].Value.ToString());
 
-            if (mahasiswaID > 0)
+            if (abdul_latief_fathoni_var_mhsID > 0)
             {
                 abdul_latief_fathoni_enable_textbox(true);
 
@@ -114,6 +111,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
                 btnSimpan.Text = "Update";
                 btnSimpan.Enabled = true;
                 btnHapus.Enabled = true;
+                btnCetak.Enabled = true;
             }
         }
 
@@ -124,7 +122,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
                 DialogResult dialogResult = MessageBox.Show("Are you sure want to delete it?", "Confirmation", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    this.table_nilai_mahasiswaTableAdapter.Delete(Convert.ToInt32(mahasiswaID));
+                    this.table_nilai_mahasiswaTableAdapter.Delete(Convert.ToInt32(abdul_latief_fathoni_var_mhsID));
                     abdul_latief_fathoni_load_data_grid();
                     abdul_latief_fathoni_clear_textbox();
                     abdul_latief_fathoni_enable_textbox(false);
@@ -137,6 +135,23 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnCetak_Click(object sender, EventArgs e)
+        {
+            printDialog1.Document = printDocument1;
+            if(printDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("NIM : " + tbNim.Text, new Font("Arial", 12), Brushes.Black, 90, 140);
+            e.Graphics.DrawString("Nama Mahasiswa : " + tbNamaMahasiswa.Text, new Font("Arial", 12), Brushes.Black, 90, 160);
+            e.Graphics.DrawString("Mata Kuliah : " + tbMataKuliah.Text, new Font("Arial", 12), Brushes.Black, 90, 180);
+            e.Graphics.DrawString("Nilai : " + tbNilai.Text, new Font("Arial", 12), Brushes.Black, 90, 200);
         }
     }
 }

@@ -30,8 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namamahasiswaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matakuliahDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nilaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet = new Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1();
             this.panelBottom = new System.Windows.Forms.Panel();
-            this.id_label = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,19 +50,14 @@
             this.tbMataKuliah = new System.Windows.Forms.TextBox();
             this.tbNamaMahasiswa = new System.Windows.Forms.TextBox();
             this.tbNim = new System.Windows.Forms.TextBox();
-            this.dataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet = new Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1();
             this.abdullatieffathonitablenilaimahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.table_nilai_mahasiswaTableAdapter = new Abdul_Latief_Fathoni_TB2_Data_Mahasiswa.DataSet1TableAdapters.table_nilai_mahasiswaTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namamahasiswaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matakuliahDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nilaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
+            this.panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.abdullatieffathonitablenilaimahasiswaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,9 +82,56 @@
             this.dataGridView.TabIndex = 0;
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.onCellDoubleClick);
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nimDataGridViewTextBoxColumn
+            // 
+            this.nimDataGridViewTextBoxColumn.DataPropertyName = "nim";
+            this.nimDataGridViewTextBoxColumn.HeaderText = "NIM";
+            this.nimDataGridViewTextBoxColumn.Name = "nimDataGridViewTextBoxColumn";
+            this.nimDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // namamahasiswaDataGridViewTextBoxColumn
+            // 
+            this.namamahasiswaDataGridViewTextBoxColumn.DataPropertyName = "nama_mahasiswa";
+            this.namamahasiswaDataGridViewTextBoxColumn.HeaderText = "Nama Mahasiswa";
+            this.namamahasiswaDataGridViewTextBoxColumn.Name = "namamahasiswaDataGridViewTextBoxColumn";
+            this.namamahasiswaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.namamahasiswaDataGridViewTextBoxColumn.Width = 250;
+            // 
+            // matakuliahDataGridViewTextBoxColumn
+            // 
+            this.matakuliahDataGridViewTextBoxColumn.DataPropertyName = "mata_kuliah";
+            this.matakuliahDataGridViewTextBoxColumn.HeaderText = "Mata Kuliah";
+            this.matakuliahDataGridViewTextBoxColumn.Name = "matakuliahDataGridViewTextBoxColumn";
+            this.matakuliahDataGridViewTextBoxColumn.ReadOnly = true;
+            this.matakuliahDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // nilaiDataGridViewTextBoxColumn
+            // 
+            this.nilaiDataGridViewTextBoxColumn.DataPropertyName = "nilai";
+            this.nilaiDataGridViewTextBoxColumn.HeaderText = "Nilai";
+            this.nilaiDataGridViewTextBoxColumn.Name = "nilaiDataGridViewTextBoxColumn";
+            this.nilaiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataSetBindingSource
+            // 
+            this.dataSetBindingSource.DataMember = "table_nilai_mahasiswa";
+            this.dataSetBindingSource.DataSource = this.dataSet;
+            // 
+            // dataSet
+            // 
+            this.dataSet.DataSetName = "DataSet";
+            this.dataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // panelBottom
             // 
-            this.panelBottom.Controls.Add(this.id_label);
             this.panelBottom.Controls.Add(this.label4);
             this.panelBottom.Controls.Add(this.label3);
             this.panelBottom.Controls.Add(this.label2);
@@ -101,15 +149,6 @@
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Size = new System.Drawing.Size(800, 235);
             this.panelBottom.TabIndex = 1;
-            // 
-            // id_label
-            // 
-            this.id_label.AutoSize = true;
-            this.id_label.Location = new System.Drawing.Point(699, 30);
-            this.id_label.Name = "id_label";
-            this.id_label.Size = new System.Drawing.Size(70, 13);
-            this.id_label.TabIndex = 12;
-            this.id_label.Text = "id mahasiswa";
             // 
             // label4
             // 
@@ -155,6 +194,7 @@
             this.btnCetak.TabIndex = 7;
             this.btnCetak.Text = "Cetak Data";
             this.btnCetak.UseVisualStyleBackColor = true;
+            this.btnCetak.Click += new System.EventHandler(this.btnCetak_Click);
             // 
             // btnHapus
             // 
@@ -214,16 +254,6 @@
             this.tbNim.Size = new System.Drawing.Size(238, 20);
             this.tbNim.TabIndex = 0;
             // 
-            // dataSetBindingSource
-            // 
-            this.dataSetBindingSource.DataMember = "table_nilai_mahasiswa";
-            this.dataSetBindingSource.DataSource = this.dataSet;
-            // 
-            // dataSet
-            // 
-            this.dataSet.DataSetName = "DataSet";
-            this.dataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // abdullatieffathonitablenilaimahasiswaBindingSource
             // 
             this.abdullatieffathonitablenilaimahasiswaBindingSource.DataMember = "table_nilai_mahasiswa";
@@ -233,43 +263,13 @@
             // 
             this.table_nilai_mahasiswaTableAdapter.ClearBeforeFill = true;
             // 
-            // idDataGridViewTextBoxColumn
+            // printDialog1
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Visible = false;
+            this.printDialog1.UseEXDialog = true;
             // 
-            // nimDataGridViewTextBoxColumn
+            // printDocument1
             // 
-            this.nimDataGridViewTextBoxColumn.DataPropertyName = "nim";
-            this.nimDataGridViewTextBoxColumn.HeaderText = "NIM";
-            this.nimDataGridViewTextBoxColumn.Name = "nimDataGridViewTextBoxColumn";
-            this.nimDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // namamahasiswaDataGridViewTextBoxColumn
-            // 
-            this.namamahasiswaDataGridViewTextBoxColumn.DataPropertyName = "nama_mahasiswa";
-            this.namamahasiswaDataGridViewTextBoxColumn.HeaderText = "Nama Mahasiswa";
-            this.namamahasiswaDataGridViewTextBoxColumn.Name = "namamahasiswaDataGridViewTextBoxColumn";
-            this.namamahasiswaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.namamahasiswaDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // matakuliahDataGridViewTextBoxColumn
-            // 
-            this.matakuliahDataGridViewTextBoxColumn.DataPropertyName = "mata_kuliah";
-            this.matakuliahDataGridViewTextBoxColumn.HeaderText = "Mata Kuliah";
-            this.matakuliahDataGridViewTextBoxColumn.Name = "matakuliahDataGridViewTextBoxColumn";
-            this.matakuliahDataGridViewTextBoxColumn.ReadOnly = true;
-            this.matakuliahDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // nilaiDataGridViewTextBoxColumn
-            // 
-            this.nilaiDataGridViewTextBoxColumn.DataPropertyName = "nilai";
-            this.nilaiDataGridViewTextBoxColumn.HeaderText = "Nilai";
-            this.nilaiDataGridViewTextBoxColumn.Name = "nilaiDataGridViewTextBoxColumn";
-            this.nilaiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // abdul_latief_fathoni_nilai_mahasiswa
             // 
@@ -282,10 +282,10 @@
             this.Text = "Nilai Mahasiswa";
             this.Load += new System.EventHandler(this.abdul_latief_fathoni_nilai_mahasiswa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            this.panelBottom.ResumeLayout(false);
-            this.panelBottom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet)).EndInit();
+            this.panelBottom.ResumeLayout(false);
+            this.panelBottom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.abdullatieffathonitablenilaimahasiswaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -311,12 +311,13 @@
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.TextBox tbNim;
-        private System.Windows.Forms.Label id_label;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nimDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namamahasiswaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn matakuliahDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nilaiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 
