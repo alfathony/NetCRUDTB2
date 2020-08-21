@@ -19,13 +19,26 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             InitializeComponent();
         }
 
-        public void LoadGridView()
+        public void abdul_latief_fathoni_load_data_grid()
         {
             this.table_nilai_mahasiswaTableAdapter.Fill(this.dataSet.table_nilai_mahasiswa);
 
         }
 
-        public void ClearTextBox()
+        private void abdul_latief_fathoni_nilai_mahasiswa_Load(object sender, EventArgs e)
+        {
+            abdul_latief_fathoni_load_data_grid();
+
+            btnSimpan.Enabled = false;
+            btnHapus.Enabled = false;
+            btnCetak.Enabled = false;
+
+            abdul_latief_fathoni_enable_textbox(false);
+
+            id_label.Text = mahasiswaID.ToString();
+        }
+
+        public void abdul_latief_fathoni_clear_textbox()
         {
             tbNim.Clear();
             tbNamaMahasiswa.Clear();
@@ -33,7 +46,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             tbNilai.Clear();
         }
 
-        public void EnableTextBox(Boolean val)
+        public void abdul_latief_fathoni_enable_textbox(Boolean val)
         {
             tbNim.Enabled = val;
             tbNamaMahasiswa.Enabled = val;
@@ -41,27 +54,11 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             tbNilai.Enabled = val;
         }
 
-        private void abdul_latief_fathoni_nilai_mahasiswa_Load(object sender, EventArgs e)
-        {
-            LoadGridView();
-
-            btnSimpan.Enabled = false;
-            btnHapus.Enabled = false;
-            btnCetak.Enabled = false;
-
-            tbNim.Enabled = false;
-            tbNamaMahasiswa.Enabled = false;
-            tbMataKuliah.Enabled = false;
-            tbNilai.Enabled = false;
-
-            id_label.Text = mahasiswaID.ToString();
-        }
-
         private void btnTambah_Click(object sender, EventArgs e)
         {
             mahasiswaID = 0;
-            EnableTextBox(true);
-            ClearTextBox();
+            abdul_latief_fathoni_enable_textbox(true);
+            abdul_latief_fathoni_clear_textbox();
             btnSimpan.Text = "Simpan";
             btnSimpan.Enabled = true;
             btnHapus.Enabled = false;
@@ -86,9 +83,9 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
 
                 MessageBox.Show("Data has been saved");
 
-                LoadGridView();
-                ClearTextBox();
-                EnableTextBox(false);
+                abdul_latief_fathoni_load_data_grid();
+                abdul_latief_fathoni_clear_textbox();
+                abdul_latief_fathoni_enable_textbox(false);
                 btnSimpan.Enabled = false;
             }
             catch (Exception ex)
@@ -107,7 +104,7 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
 
             if (mahasiswaID > 0)
             {
-                EnableTextBox(true);
+                abdul_latief_fathoni_enable_textbox(true);
 
                 tbNim.Text = row.Cells[1].Value.ToString();
                 tbNamaMahasiswa.Text = row.Cells[2].Value.ToString();
@@ -118,22 +115,19 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
                 btnSimpan.Enabled = true;
                 btnHapus.Enabled = true;
             }
-
-            
-
         }
 
         private void btnHapus_Click(object sender, EventArgs e)
         {
             try
             {
-                DialogResult dialogResult = MessageBox.Show("Apakah akan dihapus?", "Confirmation", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Are you sure want to delete it?", "Confirmation", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     this.table_nilai_mahasiswaTableAdapter.Delete(Convert.ToInt32(mahasiswaID));
-                    LoadGridView();
-                    ClearTextBox();
-                    EnableTextBox(false);
+                    abdul_latief_fathoni_load_data_grid();
+                    abdul_latief_fathoni_clear_textbox();
+                    abdul_latief_fathoni_enable_textbox(false);
                     btnSimpan.Text = "Simpan";
                     btnSimpan.Enabled = false;
                     btnHapus.Enabled = false;
@@ -141,7 +135,6 @@ namespace Abdul_Latief_Fathoni_TB2_Data_Mahasiswa
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }
         }
